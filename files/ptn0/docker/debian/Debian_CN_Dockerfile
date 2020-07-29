@@ -57,8 +57,8 @@ RUN sudo mkdir -p $CNODE_HOME/files $CNODE_HOME/db $CNODE_HOME/logs $CNODE_HOME/
 # GUILD SCRIPTS
 RUN cd && git clone --quiet https://github.com/cardano-community/guild-operators.git \
     && cp -rf ~/guild-operators/scripts/cnode-helper-scripts/* $CNODE_HOME/scripts \
-    && cp -rf ~/guild-operators/files/scripts/* $CNODE_HOME/scripts \
-    && cp -rf ~/guild-operators/files/files/* $CNODE_HOME/files \
+    && cp -rf ~/guild-operators/scripts/* $CNODE_HOME/scripts \
+    && cp -rf ~/guild-operators/files/* $CNODE_HOME/files \
     && rm -rf ~/guild-operators
 
 # HYDRA BINS
