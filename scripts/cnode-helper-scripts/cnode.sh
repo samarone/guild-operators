@@ -22,7 +22,7 @@ TOPOLOGY="${CNODE_HOME}/files/topology.json"
 [[ -z "${CNODE_PORT}" ]] && CNODE_PORT=6000
 [[ -z "${SOCKET}" ]] && SOCKET="${CNODE_HOME}/sockets/node0.socket"
 [[ -z "${CONFIG}" ]] && CONFIG="${CNODE_HOME}/files/config.json"
-[[ -z "${TOPOLOGY}" ]] && TOPOLOGY="${CNODE_HOME}/files/topology.json"
+[[ -z "${TOPOLOGY}" ]] && TOPOLOGY="${CNODE_HOME}/files/topology.json":
 
 if [[ -S "${SOCKET}" ]]; then
   if pgrep -f "[c]ardano-node.*.${SOCKET}"; then
